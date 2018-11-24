@@ -10,7 +10,7 @@
 #define WRITE 1
 #define READ 0
 
-const char ex[] = "exit";
+const char exit_flag[] = "exit";
 const char pip[] = "|";
 const char separators[] = " \n";
 
@@ -44,7 +44,7 @@ int main() {
         if ((ptr = strtok(buffer, separators)) == NULL)
             continue;
 
-        if (strcmp(ptr, ex) == 0)
+        if (strcmp(ptr, exit_flag) == 0)
             return 0;
 
         while (ptr != NULL) {
