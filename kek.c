@@ -196,6 +196,6 @@ int execute(char ***cmd, int num_cmd) {
     close(fb[!pipe_index][WRITE]);
     for (int i = 0; i < k; i++)
         wait(NULL);
-    return 0;
+    return  0;
 }
 
